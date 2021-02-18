@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
     <title>Forms</title>
+
 </head>
 <body>
     <div class="middle">
-    <form action="#" method="POST">
+    <form action="#" method="POST" class="form1"><br>
         <label class="username" >Your Name : </label>
-        <input type="text" name="username" placeholder="Enter your Name" class="name1" maxlength="20" required>
+        <input type="text" name="username" placeholder="Enter your Name" class="name1" maxlength="20" required><br>
         <label class="email" >Your Email : </label>
-        <input type="email" name="email" placeholder="Enter your email" class="email1" maxlength="20" required>
+        <input type="email" name="email" placeholder="Enter your email" class="email1" maxlength="20" required><br>
         <label class="dob">Date of Birth</label>
-        <input type="date" name="dob" placeholder="Date of Birth" class="dob1 da">
+        <input type="date" name="dob" placeholder="Date of Birth" class="dob1 da"><br>
+
         <label class="comment" >Comment Here : </label>
-        <input type="text" maxlength="150" class="comment1" size="200" placeholder="Type your comment here…" required>
-        <label for="opinion">What is your overall opinion about this article : </label>
-        <select class="opinion" name="opinion">
-            <option value="Positive">Positive</option>
-            <option value="Negative">Negative</option>
-            <option value="Neutral">Neutral</option>            
-        </select>        
+        <textarea  maxlength="150" class="comment1" size="200" placeholder="Type your comment here…" required>
+            </textarea><br>
+
+        <label for="opinion">What is your overall opinion about this article : </label><br>
+        <input type="radio" class="positive" name="positive">
+        <label for="positve">Positive</label><br>
+        <input type="radio" class="negative" name="negative">
+        <label for="negative">Negative</label><br>
+        <input type="radio" class="neutral" name="neutral">
+        <label for="neutral">neutral</label>  
+        <br>
         <input type="checkbox" class="check1 " name="checkbox">
-        <label for="checkbox">I want to subscribe to the newsletter</label>
-        <input type="submit" name="Submit" aria-label="">
+        <label for="checkbox">I want to subscribe to the newsletter</label><br>
+
+        <input type="submit" name="Submit"value="save"><br>
     </form>
     </div>
 </body>
