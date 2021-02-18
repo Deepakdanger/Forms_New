@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="middle">
+    <form action="#" method="POST">
+        <label class="username" >Your Name : </label>
+        <input type="text" name="username" placeholder="Enter your Name" class="name1" maxlength="20" required>
+        <label class="email" >Your Email : </label>
+        <input type="email" name="email" placeholder="Enter your email" class="email1" maxlength="20" required>
+        <label class="dob">Date of Birth</label>
+        <input type="date" name="dob" placeholder="Date of Birth" class="dob1 da">
+        <label class="comment" >Comment Here : </label>
+        <input type="text" maxlength="150" class="comment1" size="200" placeholder="Type your comment here…" required>
+        <label for="opinion">What is your overall opinion about this article : </label>
+        <select class="opinion" name="opinion">
+            <option value="Positive">Positive</option>
+            <option value="Negative">Negative</option>
+            <option value="Neutral">Neutral</option>            
+        </select>        
+        <input type="checkbox" class="check1 " name="checkbox">
+        <label for="checkbox">I want to subscribe to the newsletter</label>
+        <input type="submit" name="Submit" aria-label="">
+    </form>
+    </div>
+</body>
+</html>
